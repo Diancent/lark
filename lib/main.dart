@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lark/screens/home/home.dart';
+import 'package:lark/screens/pages_hub.dart';
 import 'package:lark/theme.dart';
 
 void main() {
@@ -13,10 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Audio store',
-      debugShowCheckedModeBanner: false,
-      theme: theme(),
-      home: const Home(),
-    );
+        title: 'Audio store',
+        debugShowCheckedModeBanner: false,
+        theme: theme(),
+        //home: const Home(),
+        home: const PagesHub());
   }
 }
